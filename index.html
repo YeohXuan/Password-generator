@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="unlock-keyhole-solid.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3587451eb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <i class="fa-solid fa-circle-half-stroke fa-3x" style="color: #ffffff;" onclick="lightMode()"></i>
+    <div id="main">
+        <h1 id="title">Generate a<div class="green">random password</div></h1>
+        <p>Never use an insecure password again.</p>
+        <div id="checks">
+            <input type="checkbox" id="ps1" name="option1" value="ABC" class="checkbox" checked="checked">
+            <label for="ps1" class="labels">ABC</label>
+            <input type="checkbox" id="ps2" name="option2" value="abc" class="checkbox">
+            <label for="ps2" class="labels">abc</label>
+            <input type="checkbox" id="ps3" name="option3" value="123" class="checkbox">
+            <label for="ps3" class="labels">123</label>
+            <input type="checkbox" id="ps4" name="option4" value="#$&" class="checkbox" checked="checked">
+            <label for="ps4" class="labels">#$&</label><br>
+        </div>
+        <button id="generate-ps" onclick="generatePs()">Generate passwords</button>
+        <div class="line"></div>
+        <button class="passwords" id="ps-1" onclick="copy1()"></button>
+        <button class="passwords" id="ps-2" onclick="copy2()"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
